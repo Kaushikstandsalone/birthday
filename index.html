@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KNOCK</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        body{
+            background-color:black;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+       
+        p{
+            color:white;
+            font-size:60px;
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @keyframes popup{
+            from{
+                transform:translateZ(42px);
+            }
+            to{
+                transform:translateZ(-42px);
+            }
+        }
+        .pop{
+            animation-name:popup;
+            animation-duration:0.5s;
+           
+            animation-iteration-count: infinite;
+            animation-delay:0;
+        }
+        .typewriter  {
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em; 
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    color:white;
+            font-size:60px;
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.poppper  {
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  margin-top:10%;
+  letter-spacing: .10em; 
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    color:white;
+            font-size:60px;
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            animation-delay: 0s;
+        }
+
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+     
+
+    </style>
+    <body>
+        <h1 class="typewriter ">Knock,Knock !!!!!!</h1>
+        <a href="candle.html"><img style="margin-top:90px" height="300px" width="400px" src="https://i.pinimg.com/originals/38/e5/38/38e538c68792b9d5d9542f917dd490f8.gif"></a>
+        <p class="poppper">Click the man..(There is something for you)</p>
+        <script src="first.js"></script>
+    </body>
+</html>
